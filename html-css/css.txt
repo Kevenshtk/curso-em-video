@@ -1,0 +1,135 @@
+@charset "UTF-8"; para ter compatibilidade com caracteres especiais
+
+*{  } para fazer configurações globais
+
+color; muda acor do texto
+
+ALINHAMENTO
+text-align (center, left, right, justify); para alinha o texto
+text-indent: px; da um espaço na primeira linha do p
+
+BACKGROUND
+background-image: linear-gradient(to left(direção), cor, cor); para fazer degrade
+background-image: url(espaco.jpg); colocar imagem de fundo
+background-size: 1350px; alterar o tamanho
+
+
+font-size: 1em; define o tamanho da fonte 
+medidas absolutas
+cm, mm, px(pixel)
+
+medidas relativas
+em(altura m), ex(altura x)
+16px é 1em
+
+
+font-weight(lighter, normal, bold, bolder) é o peso da fonte
+
+font-style(italic)
+
+text-decoration(underline, none) texto sublinhado/ não sublinhado
+
+font(font-style-> font-weight-> font-size-> font-family(ordem)) é a forma simplificada 
+
+
+ @font-face (para colocar fontes baixadas) { usar fontes baixadas
+            font-family: nome da fonte;
+            src: url('nome e formato da fonte') format('opentype(otf) truetype(ttf)');
+        }
+
+
+SELETORES
+id em CSS é #
+class em CSS é .
+
+div > p:
+div p:
+
+pseudo-classe é : div(elemento):hover(estado do elemento) é usada para definir um estado especial de um elemento.
+pseudo-elemento : a(elemento)::after(estado do elemento) mexe com o conteúdo do elemento(Ex: coloar ícone em algo)
+
+a.externo::after{
+    content: '\00A0\1F517';
+
+}
+
+elementos
+after: depois do elemento
+before: antes do elemento
+
+classes
+hover: quando passa o mouse em cima
+visited:
+active: quando click ocorre a ação 
+
+
+height: altura
+width: largura
+max-width: lartura máxima
+min-height: px; altura miníma
+
+border(width, style, color): 1px(tamanho) solid(tipo(dashed, groove, ridge, inset, outset)) white(cor);
+border-radius: 20px 0px(borda direita C/esquerda B); para aredondar a borda
+
+
+padding(top, right,bottom, left): é o espaço entre o conteúdo e a margem
+1 valor: configura todos no msm valor
+2 valores: configura o primeiro valor cima/baixo e o segundo valor direita/esquerda 
+
+margin(top, right, bottom, left): auto deixa a caixa no centro da tela
+
+outline(width, style, color): é o espaço entre a borda e a margem
+
+box-shadow : 1px(delocamento H) 1px(delocamento V) 1px(espalhamento) black(cor) sombra em caixas
+text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.26); sombra em textos
+
+
+:root serve para criar váriaveis{
+ --nome na var: valor;
+}
+
+
+resposividade
+        main{
+
+            padding: 20px;
+            border-radius: 10px;
+            min-width: 300px;largura miníma
+            max-width: 1000px;largura máxima
+            margin: auto;
+        }
+
+        img{
+            width: 100%;largura da imagem
+	    display: block;img pq
+	    margin: auto; img pq
+        }
+
+
+transition-duration: 0.5s; pra quando o mouse passar em cima
+
+line-height: em; é o espaço entre linha
+
+list-style-type: '\2714(nome I)\00A0(espaço)'; colocar icones na colunas
+
+list-style-position: inside(o ícone faz parte do texto), outside; posição dos icones da colunas
+
+columns: 2; números de colunas
+
+
+
+centralizar vídeo
+div.video{
+    background-color: var(--cor5);
+    margin: 0px -20px 30px -20px;
+    padding: 20px;
+    padding-bottom: 57%;
+    position: relative;(mudar a posição do elemento)
+}
+div.video > iframe{
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    width: 90%;
+    height: 90%;
+}

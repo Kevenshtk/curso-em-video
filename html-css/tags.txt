@@ -1,0 +1,108 @@
+Formatações 
+<q> usado para citações simples("")
+
+<blockquote> usado para citações completas(tem quebra de linha e um espaço)
+
+<small> deixa o texto pequeno
+
+<sup> X^20 <p>x<sup>20</sup></p>
+
+<sub> H2O <p>H<sub>2</sub>O</p>
+
+<abbr> coloca o significado das abreviações
+
+<hr> criar uma divisão entre dois elementos
+
+<pre> O texto é mostrado como no código
+
+<code> mostra um pedaço de código no site
+
+<pre>
+        <code>
+            "img src="midias/logo-html.png" alt="logo-html"
+        </code>
+</pre>
+
+
+&lt; &gt; serve para colocar <>
+
+<a> links
+parâmetros 
+target="_blank" rel="external"> abre em outra aba o link
+
+rel="next"> para abrir a próxima página de um site (link interno)
+
+rel="prev"> para voltar para um página de um site (link interno)
+
+target="_self"> usado para abrina mesma aba (link interno)
+
+<a href="Local do arquivo" download="nome do arquivo" type="tipo de arquivo"> link para download
+
+
+
+
+Listas
+<ol> lista ordenada
+
+<ol type="1"> lista númerada
+<ol type="a"> listas com letras minúsculas
+<ol type="A"> listas com letras maiuscular
+<ol type="i"> lista com números romanos minúsculas
+<ol type="I"> lista com números romanos maiuscular
+
+<ul> lista não ordenada
+
+<ul type="disc"> circulo
+<ul type="circle"> circulo vázio
+<ul type="square"> quadrando
+
+<li> intens da lista
+
+<dl> lista de definições
+<dt> termo
+<dd> descrição
+
+
+
+
+Mídias
+imagem
+<picture> oferece mais flexibilidade na especificação de recursos de imagem.
+
+<source>(midia:type) tem que obedecer a ordem de menor para maior
+<source media="(max-width: tamanho max(750px P, 1000px M))" srcset="local file" type="image/tipo imagem">
+
+<picture>
+       <source media="(max-width: 750px)" srcset="img/foto-p.png" type="image/png">
+       <source media="(max-width: 1000px)" srcset="img/foto-m.png" type="image/png">
+       <img src="img/foto-g.png" alt="Imagem flexível">
+ </picture>
+
+
+áudio
+<audio src="local file" controls autoplay(mostrar controle)></audio> (simples)
+
+<audio preload="metadata" autoplay controls>
+ordem de carregamento
+        <source src="midias/guanacast-33.mp3" type="audio/mpeg"> 1p
+        <p>Infelizmente seu navegador não consegue reproduzir áudio. 
+        <a href="midias/guanacast-33.mp3">Clique aqui para baixar o arquivo MP3</a></p> 2s
+    </audio>
+
+vídeo
+ <video src="local file" width="500"(tamanho na tela) controls></video> (simples)
+
+<video width="500" poster="img/limoes-capa.png"(capa para o video) controls>
+        <source src="video/meu-video.mp4" type="video/mp4">
+        <source src="video/meu-video.m4v" type="video/mp4">
+        <source src="video/meu-video.webm" type="video/webm">
+        <source src="video/meu-video.ogv" type="video/ogg">
+        <p>Seu navegador não tem compatibilidade com reprodução de vídeos.</p>
+   </video>
+
+
+<header> é o cabeçalho do site
+<main> é o assuto  principal dentro do <body>
+<section> é uma seção do site
+<footer> é o rodapé do site
+<aside> conteúdo extra 
