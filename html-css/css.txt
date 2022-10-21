@@ -10,7 +10,7 @@ text-indent: px; da um espaço na primeira linha do p
 
 BACKGROUND
 background-image: linear-gradient(to left(direção), cor, cor); para fazer degrade
-background-image: url(espaco.jpg); colocar imagem de fundo
+background-image: url(caminho para img); colocar imagem de fundo
 background-size: 1350px; alterar o tamanho
 
 
