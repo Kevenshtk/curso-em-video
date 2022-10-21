@@ -12,11 +12,13 @@ BACKGROUND
 background-image: linear-gradient(to left(direção), cor, cor); para fazer degrade
 background-image: url(caminho para img); colocar imagem de fundo
 background-size: 1350px; alterar o tamanho
+background-repeat: (no-repeat, repeat-x(horizontal), repeat-y(vertical));
+background-position:(left, right, top, bottom, center);
 
 
 font-size: 1em; define o tamanho da fonte 
 medidas absolutas
-cm, mm, px(pixel)
+cm, mm, px
 
 medidas relativas
 em(altura m), ex(altura x)
@@ -63,9 +65,9 @@ visited:
 active: quando click ocorre a ação 
 
 
-height: altura
+height 98vh: altura
 width: largura
-max-width: lartura máxima
+max-width: ;lartura máxima
 min-height: px; altura miníma
 
 border(width, style, color): 1px(tamanho) solid(tipo(dashed, groove, ridge, inset, outset)) white(cor);
