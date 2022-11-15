@@ -1,9 +1,12 @@
 body{
     background-image: url(espaco.jpg);
-    background-size: 1350px;
+    background-size: 100%;
+    background-position: center;
+    background-attachment: fixed;
 }
 img{
-    position: relative;
-    left: 300px;
-    top: 100px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
 }

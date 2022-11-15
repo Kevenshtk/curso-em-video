@@ -11,10 +11,13 @@ text-indent: px; da um espaço na primeira linha do p
 BACKGROUND
 background-image: linear-gradient(to left(direção), cor, cor); para fazer degrade
 background-image: url(caminho para img); colocar imagem de fundo
-background-size: 1350px; alterar o tamanho
+background-size: 1350px(cover(preenche toda a tela), contain(monstra 100% da imagem)); alterar o tamanho
 background-repeat: (no-repeat, repeat-x(horizontal), repeat-y(vertical));
 background-position:(left, right, top, bottom, center);
+background-attachment: fixed; faz o fundo ficar fixo 
 
+Shorthand
+background(color,image, position, repeat, attachment(ordem)) black url(img/wallpaper002.jpg) no-repeat center fixed;
 
 font-size: 1em; define o tamanho da fonte 
 medidas absolutas
@@ -26,12 +29,13 @@ em(altura m), ex(altura x)
 
 
 font-weight(lighter, normal, bold, bolder) é o peso da fonte
-
 font-style(italic)
-
 text-decoration(underline, none) texto sublinhado/ não sublinhado
+text-transform: uppercase; deixa todas as letras maíusculas
+font-variant: small-caps; deixa todas as letras maíusculas e as primeiras letras maiores
 
-font(font-style-> font-weight-> font-size-> font-family(ordem)) é a forma simplificada 
+Shorthand
+font(font-style-> font-weight-> font-size-> font-family(ordem))
 
 
  @font-face (para colocar fontes baixadas) { usar fontes baixadas
@@ -50,14 +54,13 @@ div p:
 pseudo-classe é : div(elemento):hover(estado do elemento) é usada para definir um estado especial de um elemento.
 pseudo-elemento : a(elemento)::after(estado do elemento) mexe com o conteúdo do elemento(Ex: coloar ícone em algo)
 
-a.externo::after{
-    content: '\00A0\1F517';
-
-}
-
 elementos
 after: depois do elemento
 before: antes do elemento
+
+a.externo::after{
+    content: '\00A0\1F517';
+}
 
 classes
 hover: quando passa o mouse em cima
@@ -70,7 +73,9 @@ width: largura
 max-width: ;lartura máxima
 min-height: px; altura miníma
 
+Shorthand
 border(width, style, color): 1px(tamanho) solid(tipo(dashed, groove, ridge, inset, outset)) white(cor);
+
 border-radius: 20px 0px(borda direita C/esquerda B); para aredondar a borda
 
 
@@ -135,3 +140,16 @@ div.video > iframe{
     width: 90%;
     height: 90%;
 }
+
+position: munda a posição de um elemento
+
+relative muda o elemento apartir da sua posição normal(horizontal)
+
+absolute muda o elemento apartir da sua posição normal(horizontal e vertical)
+
+fixed deixa o elemento fixo na tela
+
+sticky muda a posição dependendo rolagem
+
+transform: aplica uma transformação 2D ou 3D a um elemento
+translate(largula(x), altura(y)); munda a posição de um elemento 2D
