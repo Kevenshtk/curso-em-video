@@ -87,10 +87,11 @@ margin(top, right, bottom, left): auto deixa a caixa no centro da tela
 
 outline(width, style, color): é o espaço entre a borda e a margem
 
+SOMBRAS
 box-shadow : 1px(delocamento H) 1px(delocamento V) 1px(espalhamento) black(cor) sombra em caixas
 text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.26); sombra em textos
 
-
+VÁRIAVEIS EM CSS
 :root serve para criar váriaveis{
  --nome na var: valor;
 }
@@ -140,6 +141,7 @@ div.video > iframe{
     width: 90%;
     height: 90%;
 }
+
 
 position: munda a posição de um elemento
 

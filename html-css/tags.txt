@@ -1,4 +1,6 @@
 Formatações 
+<strong> deixa em negrito 
+
 <q> usado para citações simples("")
 
 <blockquote> usado para citações completas(tem quebra de linha e um espaço)
