@@ -7,6 +7,7 @@ color; muda acor do texto
 ALINHAMENTO
 text-align (center, left, right, justify); para alinha o texto
 text-indent: px; da um espaço na primeira linha do p
+vertical-align(top, middles, bottom) para alinha o texto em tabelas
 
 BACKGROUND
 background-image: linear-gradient(to left(direção), cor, cor); para fazer degrade
@@ -19,15 +20,19 @@ background-attachment: fixed; faz o fundo ficar fixo
 Shorthand
 background(color,image, position, repeat, attachment(ordem)) black url(img/wallpaper002.jpg) no-repeat center fixed;
 
-font-size: 1em; define o tamanho da fonte 
+
+MEDIADS
 medidas absolutas
-cm, mm, px
+cm, mm, px, %
+vw é 1/100 da largura da janela.
+vh é 1/100 da altura da janela.
 
 medidas relativas
 em(altura m), ex(altura x)
 16px é 1em
 
 
+font-size: 1em; define o tamanho da fonte
 font-weight(lighter, normal, bold, bolder) é o peso da fonte
 font-style(italic)
 text-decoration(underline, none) texto sublinhado/ não sublinhado
@@ -73,16 +78,19 @@ width: largura
 max-width: ;lartura máxima
 min-height: px; altura miníma
 
+BORDA
 Shorthand
 border(width, style, color): 1px(tamanho) solid(tipo(dashed, groove, ridge, inset, outset)) white(cor);
 
 border-radius: 20px 0px(borda direita C/esquerda B); para aredondar a borda
+border-collapse: collapse; junta as bordas de uma tabela
 
-
+PADDING
 padding(top, right,bottom, left): é o espaço entre o conteúdo e a margem
 1 valor: configura todos no msm valor
 2 valores: configura o primeiro valor cima/baixo e o segundo valor direita/esquerda 
 
+MARGEM
 margin(top, right, bottom, left): auto deixa a caixa no centro da tela
 
 outline(width, style, color): é o espaço entre a borda e a margem
@@ -152,6 +160,7 @@ absolute muda o elemento apartir da sua posição normal(horizontal e vertical)
 fixed deixa o elemento fixo na tela
 
 sticky muda a posição dependendo rolagem
+O.B.S.: O elemento tem q está com o position relative ou absolute
 
 transform: aplica uma transformação 2D ou 3D a um elemento
 translate(largula(x), altura(y)); munda a posição de um elemento 2D

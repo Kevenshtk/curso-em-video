@@ -43,7 +43,7 @@ target="_self"> usado para abrina mesma aba (link interno)
 
 
 
-Listas
+LISTA
 <ol> lista ordenada
 
 <ol type="1"> lista númerada
@@ -68,7 +68,7 @@ Listas
 
 
 Mídias
-imagem
+IMAGEM
 <picture> oferece mais flexibilidade na especificação de recursos de imagem.
 
 <source>(midia:type) tem que obedecer a ordem de menor para maior
@@ -81,7 +81,7 @@ imagem
  </picture>
 
 
-áudio
+ÁUDIO
 <audio src="local file" controls autoplay(mostrar controle)></audio> (simples)
 
 <audio preload="metadata" autoplay controls>
@@ -91,7 +91,8 @@ ordem de carregamento
         <a href="midias/guanacast-33.mp3">Clique aqui para baixar o arquivo MP3</a></p> 2s
     </audio>
 
-vídeo
+
+VÍDEO
  <video src="local file" width="500"(tamanho na tela) controls></video> (simples)
 
 <video width="500" poster="img/limoes-capa.png"(capa para o video) controls>
@@ -103,8 +104,18 @@ vídeo
    </video>
 
 
+ESTRUTURA
 <header> é o cabeçalho do site
 <main> é o assuto  principal dentro do <body>
 <section> é uma seção do site
 <footer> é o rodapé do site
 <aside> conteúdo extra 
+
+TABELAS
+<table>
+<tr> linha da tabela
+<td> dado da tabela
+<thead> cabeçalho da tabela
+<th> título na tabela, scope="col(coluna), row(linha)" diz de onde é th 
+<tbody> corpo da tabela
+<tfoot> rodapé da tabela
