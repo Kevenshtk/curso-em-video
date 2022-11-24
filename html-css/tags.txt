@@ -113,9 +113,11 @@ ESTRUTURA
 
 TABELAS
 <table>
+<colgroup> <col> usado para seleciona colunas 
+<caption> é a lengenda da tabela
 <tr> linha da tabela
-<td> dado da tabela
+<td> dado da tabela, colsan="x" mescla células em coluna, rowsan="x" mescla células em linha
 <thead> cabeçalho da tabela
-<th> título na tabela, scope="col(coluna), row(linha)" diz de onde é th 
+<th> título na tabela, scope="col(coluna), colgroup(grupo), row(linha), rowgroup(grupo)" diz de onde são os dados de th 
 <tbody> corpo da tabela
 <tfoot> rodapé da tabela

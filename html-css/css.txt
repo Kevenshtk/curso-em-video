@@ -121,6 +121,8 @@ resposividade
 	    margin: auto; img pq
         }
 
+overflow-x: auto; faz uma barra de rolagem(horizontal) só para o elemento
+
 
 transition-duration: 0.5s; pra quando o mouse passar em cima
 
