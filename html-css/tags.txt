@@ -126,3 +126,19 @@ IFRAME
 <iframe> faz acessa um outro site sem sair do site atual O.B.S.: no meio do iframe pode coloca avisos, 
 com o parâmetro (name) posso fazer o iframe de tela para links colocando no (target)
 srcdoc permite usar html dentro do iframe
+
+FORMULÁRIOS
+<label> faz o campo se relaciona com o elemento
+
+<input>
+required faz o campo ser obrigatório
+minlength="5" faz o campo ter um minímo de caracter
+maxlength="8" faz o campo ter um máximo de caracter
+size="8" tamanho do campo
+placeholder="Nome do usuário" mostra uma dica dentro do campo 
+autocomplete="username" indica o tipo do campo
+
+INPUT NUMBER
+min="0" valor minímo aceito
+max="10" valor máximo aceito
+step="0.5" faz o valor muda de 0.5
