@@ -152,3 +152,6 @@ INPUT SELECT
 selected deixa o item já selecionado 
 option são os itens da lista
 <optgroup label="nome do grupo">
+
+OUTPUT
+<output name="" id="">0</output> ele só monstra informações na tela e não envia
