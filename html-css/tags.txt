@@ -137,8 +137,12 @@ maxlength="8" faz o campo ter um máximo de caracter
 size="8" tamanho do campo
 placeholder="Nome do usuário" mostra uma dica dentro do campo 
 autocomplete="username" indica o tipo do campo
+value="F" faz ter um valor quando escolhido
 
 INPUT NUMBER
 min="0" valor minímo aceito
 max="10" valor máximo aceito
 step="0.5" faz o valor muda de 0.5
+
+input:checkbox pode escolher vários
+input:radio só pode escolher um (todos do mesmo grupo precisa ter o mesmo name)
