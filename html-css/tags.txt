@@ -147,3 +147,8 @@ step="0.5" faz o valor muda de 0.5
 input:checkbox pode escolher vários
 input:radio só pode escolher um (todos do mesmo grupo precisa ter o mesmo name)
 input:range traz um botão para arrasta (value="" indica o valor inícial) 
+
+INPUT SELECT
+selected deixa o item já selecionado 
+option são os itens da lista
+<optgroup label="nome do grupo">
