@@ -10,3 +10,5 @@ and() são escritas entre parênteses
 
 and (orientation: portrait) para o modo retrato
 and (orientation: landscape) para o modo paisagem
+
+@media screen and () para fazer configurações diferentes no mesmo arquivo css
