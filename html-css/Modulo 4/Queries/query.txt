@@ -1,0 +1,12 @@
+media="" vem depois do link do css
+
+Mídia Types
+all para tudo
+screen para tela
+print para impressora
+
+Mídia Features vem depois das mídia types
+and() são escritas entre parênteses
+
+and (orientation: portrait) para o modo retrato
+and (orientation: landscape) para o modo paisagem
