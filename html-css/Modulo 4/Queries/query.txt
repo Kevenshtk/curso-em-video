@@ -12,3 +12,17 @@ and (orientation: portrait) para o modo retrato
 and (orientation: landscape) para o modo paisagem
 
 @media screen and () para fazer configurações diferentes no mesmo arquivo css
+
+
+
+
+
+
+/* Typical Device Breakpoints
+------------------------------
+Pequenas telas: até 600px
+Celular: de 600px até 768px
+Tablet: 768px até 992px
+Pc: 992px até 1200px
+Grandes telas: acima de 1200px
+*/
