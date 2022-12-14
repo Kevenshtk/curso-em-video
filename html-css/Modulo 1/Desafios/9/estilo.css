@@ -1,3 +1,5 @@
+@charset "UTF-8";
+
 body{
     background-color: rgb(31, 36, 36);
 }
@@ -11,4 +13,29 @@ h1{
 p{
     text-align: center;
     color: white;
+}
+
+div{
+    text-align: center;
+}
+
+iframe{
+    position: relative;
+    top: 50%;
+    left: 50%;
+
+    transform: translate(-50%,5%);
+}
+
+a{
+    font-family: system-ui, -apple-system, 'Helvetica Neue', sans-serif;
+    text-decoration: none;
+}
+a:hover{
+    font-size: 1.1em;
+}
+a.posicao{
+    position: relative;
+    top: 50%;
+    left: 49%;
 }
