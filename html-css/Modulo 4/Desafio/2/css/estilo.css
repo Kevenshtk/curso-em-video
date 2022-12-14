@@ -30,24 +30,27 @@ section#login{
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-
+    overflow: hidden;
     background-color: white;
     margin: auto;
     width: 250px;
     height: 500px;
     border-radius: 20px;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.479);
+
+    transition: width .3s, height .3s;
+    transition-timing-function: ease;
 }
 
 section#login > div#imagem{
     display: block;
     background: #5f2c82 url(../img/images.jpg) no-repeat;
     background-size: cover;
+    background-position: center center;
     height: 200px;
-    border-radius: 20px 20px 0px 0px;
 }
 
-section#login > div#formulario{
+section#login > div#form{
     display: block;
     padding: 10px;
 }

@@ -167,3 +167,8 @@ O.B.S.: O elemento tem q está com o position relative ou absolute
 
 transform: aplica uma transformação 2D ou 3D a um elemento
 translate(largula(x), altura(y)); munda a posição de um elemento 2D
+
+float
+display
+overflow
+transition
