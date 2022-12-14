@@ -25,6 +25,7 @@ Formatações
         </code>
 </pre>
 
+<nav> tag define um conjunto de links de navegação.
 
 &lt; &gt; serve para colocar <>
 
