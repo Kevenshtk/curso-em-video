@@ -71,7 +71,7 @@ classes
 hover: quando passa o mouse em cima
 visited:
 active: quando click ocorre a ação 
-
+focus-within: quando o elemento fica em foco
 
 height 98vh: altura
 width: largura
