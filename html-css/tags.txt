@@ -29,6 +29,7 @@ Formatações
 
 &lt; &gt; serve para colocar <>
 
+LINKS
 <a> links
 parâmetros 
 target="_blank" rel="external"> abre em outra aba o link
@@ -65,8 +66,9 @@ LISTA
 <dt> termo
 <dd> descrição
 
-
-
+ÍCONES
+<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" /> icones do google
+<i class="material-icons">NOME DO ÍCONE</i>
 
 Mídias
 IMAGEM
