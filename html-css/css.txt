@@ -53,9 +53,6 @@ SELETORES
 id em CSS é #
 class em CSS é .
 
-div > p:
-div p:
-
 pseudo-classe é : div(elemento):hover(estado do elemento) é usada para definir um estado especial de um elemento.
 pseudo-elemento : a(elemento)::after(estado do elemento) mexe com o conteúdo do elemento(Ex: coloar ícone em algo)
 
