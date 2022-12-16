@@ -1,0 +1,3 @@
+alert('msg') mostra um alerta
+confirm('msg') mostra um alerta para confirma
+prompt('msg') trás um campo texto
