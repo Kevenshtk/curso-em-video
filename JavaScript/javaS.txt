@@ -1,3 +1,23 @@
 alert('msg') mostra um alerta
 confirm('msg') mostra um alerta de confirma
 prompt('msg') trás um campo texto
+
+document.write(writeln)(`msg`) mostra a msg na tela
+
+Converter váriaveis
+
+Number.parseInt(n)interio
+Number.parseFloat(n)real
+Number(n)o JS que idetifica real ou interio
+
+String(n)
+n.toString()
+`msg ${n}` template string(Só funciona com crase)
+
+métodos
+s.length quantos caracteres na string
+s.toUpperCase() caracteres em maiúsculo
+s.toLowerCase() caracteres em minúsculo
+
+n.toFixed(2) mostra as casa depois do .
+.replace('.', ',') troca o . por ,
