@@ -1,3 +1,3 @@
 alert('msg') mostra um alerta
-confirm('msg') mostra um alerta para confirma
+confirm('msg') mostra um alerta de confirma
 prompt('msg') trás um campo texto
