@@ -8,7 +8,7 @@ Converter váriaveis
 
 Number.parseInt(n)interio
 Number.parseFloat(n)real
-Number(n)o JS que idetifica real ou interio
+Number(n.value)o JS que idetifica real ou interio
 
 String(n)
 n.toString()
@@ -21,3 +21,64 @@ s.toLowerCase() caracteres em minúsculo
 
 n.toFixed(2) mostra as casa depois do .
 .replace('.', ',') troca o . por ,
+
+Operadores
+aritméticos
++
+-
+*
+/
+% é o resto da divisão 
+** é a potência 5**2=25
+
+atribuição 
+n+=x serve para simplificar n=n+x
+n++ n-- serve para incremento e decremento, simplifica n=n+(-)1
+
+relacionais (true, false)
+>
+<
+>=
+<=
+== igual
+!= diferente
+=== identico(tem q ser msm valor e o tipo)
+!== diferencia pelo tipo
+
+lógicos
+! negação
+&& e (um e outro)
+|| ou (um ou outro)
+
+ternário
+? teste 
+: resultado
+
+teste ? true : false
+ex: m > 5 ? 'aprovado':'reprovado'
+
+Seletores
+.getElementsByTagName('')[0(PRI),1(SEG)(para pegar algo com a msm tag)]
+
+innerText  só o texto
+innerHTML  o texto com as formatações
+
+.getElementById('')
+.getElementsByName('')
+.getElementsByClassName('')
+.querySelector('div#msg(CSS)') faz por elementos CSS
+
+Função
+function nomeFun(){
+     bloco
+}
+
+click html
+onclick"nome()" quando clicar
+onmouseenter="" quando o mouse entra
+onmouseout="" quando o mouse sair
+
+click JS
+ a.addEventListener('click', clicar)
+ a.addEventListener('mouseenter', entrar)
+ a.addEventListener('mouseout', sair)
