@@ -18,12 +18,12 @@
     <div id="txtres"></div>
 
     <script>
-        
+        var p = prompt('seu pais')
         function enviar(){
-            var p = document.getElementById('p')
+            
             var res = document.getElementById('txtres')
             alert(`Seu país é ${p}`)
-           if(p == 'brasil'){
+           if(p == 'brasil' || 'Brasil'){
                 res.innerHTML = 'Você é Brasileiro'  
             } else {
                 res.innerHTML = 'Você é Estrangeiro'
