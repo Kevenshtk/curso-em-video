@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="bt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Horas</title>
+</head>
+<body>
+    <h1>Que horas são ?</h1>
+    <p id="res"></p>
+    <script>
+        var agora = new Date()
+        var hora = agora.getHours()
+        var res = document.getElementById('res')
+        res.innerHTML = hora
+        if(hora < 5){
+            res.innerHTML = 'Boa madrugada ! '
+            res.innerHTML += 'Agora são ' +hora+ 'h'
+        } else if(hora < 12){
+            res.innerHTML = 'Bom dia ! '
+            res.innerHTML += 'Agora são ' +hora+ 'h'
+        } else if(hora < 18){
+            res.innerHTML = 'Boa tarde ! '
+            res.innerHTML += 'Agora são ' +hora+ 'h'
+        } else{
+            res.innerHTML = 'Boa noite ! '
+            res.innerHTML += 'Agora são ' +hora+ 'h'
+        }
+    </script>
+</body>
+</html>
