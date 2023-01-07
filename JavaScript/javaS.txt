@@ -2,6 +2,8 @@ alert('msg') mostra um alerta
 confirm('msg') mostra um alerta de confirma
 prompt('msg') trás um campo texto
 
+new Date() v.get() para pegar data e hora do sistema
+
 document.write(writeln)(`msg`) mostra a msg na tela
 
 Converter váriaveis
