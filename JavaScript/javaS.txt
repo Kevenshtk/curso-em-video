@@ -58,10 +58,10 @@ teste ? true : false
 ex: m > 5 ? 'aprovado':'reprovado'
 
 Seletores
-.getElementsByTagName('')[0(PRI),1(SEG)(para pegar algo com a msm tag)]
+.getElementsByTagName('')[0(PRI),1(SEG)(seleciona algo por tag)]
 
-innerText  só o texto
-innerHTML  o texto com as formatações
+.innerText  só o texto
+.innerHTML  o texto com as formatações
 
 .getElementById('')
 .getElementsByName('')
@@ -82,3 +82,4 @@ click JS
  a.addEventListener('click', clicar)
  a.addEventListener('mouseenter', entrar)
  a.addEventListener('mouseout', sair)
+
