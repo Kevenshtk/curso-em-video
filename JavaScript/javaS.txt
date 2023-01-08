@@ -85,3 +85,5 @@ click JS
  a.addEventListener('mouseenter', entrar)
  a.addEventListener('mouseout', sair)
 
+carregar html
+onload"nome()" quando carregar o elemento html
