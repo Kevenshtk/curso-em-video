@@ -2,9 +2,18 @@ alert('msg') mostra um alerta
 confirm('msg') mostra um alerta de confirma
 prompt('msg') trás um campo texto
 
-new Date() v.getDay(diaS)() para pegar data e hora do sistema
+new Date() var.getDay(diaSem)() para pegar data e hora do sistema
 
 document.write(writeln)(`msg`) mostra a msg na tela
+
+var.document.createElement('tag') cria um elemento pelo js
+ex: var img = document.createElement('img')
+
+var.setAttribute('id,class, src', 'nome/file')
+ex: img.setAttribute('id', 'foto')
+
+var.appendChild(elemento) anexa algo a um elemento
+ex: res.appendChild(img)
 
 Converter váriaveis
 
@@ -17,9 +26,9 @@ n.toString()
 `msg ${n}` template string(Só funciona com crase)
 
 métodos
-s.length quantos caracteres na string
-s.toUpperCase() caracteres em maiúsculo
-s.toLowerCase() caracteres em minúsculo
+s.length quantos caracteres tem na string
+s.toUpperCase() deixa os caracteres em maiúsculo
+s.toLowerCase() deixa os caracteres em minúsculo
 
 n.toFixed(2) mostra as casa depois do .
 .replace('.', ',') troca o . por ,
@@ -87,3 +96,7 @@ click JS
 
 carregar html
 onload"nome()" quando carregar o elemento html
+
+Estilo em JS
+var.style.textAlign = 'center'
+
