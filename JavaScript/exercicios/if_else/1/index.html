@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Exercício 1</title>
+    <style>
+        body{
+            font-family: 'Courier New', Courier, monospace;
+            background-color: lightgray;
+        }
+        main{
+            background-color: white;
+            height: 30vh;
+            width: 40vw;
+            margin: auto;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 5px 5px 8px rgba(0, 0, 0, 0.486);
+            line-height: 25px;
+        }
+        h1{
+           text-align: center; 
+        }
+        .input{
+            width: 50px;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <h1>Qual o maior número ?</h1>
+        Primeiro número: <input type="number" class="input" name="txtn1" id="txtn1">
+        Segundo número: <input type="number" class="input" name="txtn2" id="txtn2">
+        <input type="submit" value="Verificar" onclick="calc()">
+        <div id="res">Resultado</div>
+    </main>
+
+    <script>
+        function calc(){
+        var txtn1 = document.getElementById('txtn1')
+        var txtn2 = document.getElementById('txtn2')
+        var res = document.getElementById('res')
+        var n1 = Number(txtn1.value)
+        var n2 = Number(txtn2.value)
+
+        if(n1 > n2){
+            res.innerHTML = n1+' é o maior número.'
+        } else {
+            res.innerHTML = n2+' é o maior número.'
+        }
+        }
+        
+    </script>
+</body>
+</html>

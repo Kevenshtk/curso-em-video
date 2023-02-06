@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício 5</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: lightgoldenrodyellow;
+        }
+        main{
+            background-color: white;
+            text-align: center;
+            line-height: 30px;
+            margin: auto;
+            padding: 15px;
+            height: 30vh;
+            width: 40vw;
+            border-radius: 20px;
+            box-shadow: 8px 8px 5px rgba(0, 0, 0, 0.486);
+
+            position: absolute;
+            top: 50%;
+            left: 50%;
+
+            transform: translate(-50%, -50%);
+        }
+        #txtnum1, #txtnum2{
+            width: 40px;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <h1>Aprovado ou Reprovado</h1>
+        <label for="txtnum1">Primeira Nota: </label><input type="number" name="num1" id="txtnum1" min="0" max="10" step="0.5" required>
+        <label for="txtnum2">Segunda Nota: </label><input type="number" name="num2" id="txtnum2" min="0" max="10" step="0.5" required> <br>
+        <input type="submit" value="Calcular" onclick="calc()">
+        <div class="res"></div>
+    </main>
+
+    <script>
+        function calc(){
+            var num1 = document.querySelector('#txtnum1')
+            var n1 = Number(num1.value)
+            var num2 = document.querySelector('#txtnum2')
+            var n2 = Number(num2.value)
+            var res = document.querySelector('.res')
+            var n3 = (n1 + n2)/ 2
+            
+            if(n3 >= 7 && n3 < 10){
+                res.innerHTML = '<strong>Aprovado</strong>'
+                res.style.color = 'green'
+            } else if(n3 == 10){
+                res.innerHTML = '<strong>Aprovado com Distinção</strong>'
+                res.style.color = 'green'
+            } else{
+                res.innerHTML = '<strong>Reprovado</strong>'
+                res.style.color = 'red'
+            }
+        }
+    </script>
+</body>
+</html>

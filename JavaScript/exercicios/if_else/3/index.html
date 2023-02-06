@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício 3</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: lightblue;
+        }
+        main{
+            background-color: white;
+            text-align: center;
+            line-height: 30px;
+            padding: 10px;
+            margin: auto;
+            border-radius: 10px;
+            box-shadow: 8px 8px 8px rgba(0, 0, 0, 0.562);
+
+            position: absolute;
+            top: 50%;
+            left: 50%;
+
+            transform: translate(-50%, -50%);
+        }
+
+        .input{
+            width: 30px;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <h1>Feminino ou Masculino</h1>
+        Informe o sexo: <input class="input" type="text" name="sexo" id="txtsexo" maxlength="1" required>
+        <input type="submit" value="Verificar" onclick="veri()">
+        <div class="res">Resultado...</div>
+    </main>
+
+    <script>
+        function veri(){
+            var sexo = document.getElementById('txtsexo')
+            var res = document.querySelector('.res')
+
+            if(sexo.value == 'f' || sexo.value == 'F'){
+                res.innerHTML = 'Feminino'
+            } else if(sexo.value == 'm' || sexo.value == 'M'){
+                res.innerHTML = 'Masculino'
+            } else {
+                res.innerHTML = 'Sexo inválido'
+            }
+        }
+        
+    </script>
+</body>
+</html>
