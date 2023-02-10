@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício 8</title>
+    <style>
+
+    </style>
+</head>
+<body>
+    <main>
+        <h1>Qual o produto mais barato ?</h1>
+        <h3>Informe o valor dos produtos abaixo: </h3>
+        <p><label for="txtpro1">Produto A: $</label><input type="number" name="produto1" id="txtpro1" required></p>
+        <p><label for="txtpro2">Produto B: $</label><input type="number" name="produto2" id="txtpro2" required></p>
+        <p><label for="txtpro3">Produto C: $</label><input type="number" name="produto3" id="txtpro3" required></p>
+        <input type="submit" value="Verificar" onclick="calc()">
+        <p class="res">....</p>
+    </main>
+
+    <script>
+        function calc(){
+            var txtpro1 = document.querySelector('#txtpro1')
+            var txtpro2 = document.querySelector('#txtpro2')
+            var txtpro3 = document.querySelector('#txtpro3')
+            var valorp1 = Number(txtpro1.value)
+            var valorp2 = Number(txtpro2.value)
+            var valorp3 = Number(txtpro3.value)
+            var res = document.querySelector('.res')
+
+            if(valorp1 < valorp2 && valorp1 < valorp3){
+                res.innerText = 'O produto A é o mais barato.'
+            } else if(valorp2 < valorp1 && valorp2 < valorp3){
+                res.innerText = 'O produto B é o mais barato.'
+            } else{
+                res.innerText = 'O produto C  é o mais barato.'
+            }
+        }
+    </script>
+</body>
+</html>
