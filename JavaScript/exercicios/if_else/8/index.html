@@ -6,16 +6,40 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Exercício 8</title>
     <style>
+        body{
+            background-color: rgb(60, 60, 134);
+            font-family: Arial, Helvetica, sans-serif;
+        }
 
+        main{
+            background-color: whitesmoke;
+            height: 50vh;
+            width: 30vw;
+            padding: 10px;
+            margin: auto;
+            border-radius: 0px 15px;
+        }
+
+        input[type=number]{
+            width: 55px;
+            border: 0px;
+        }
+        input[type=submit]{
+            background-color: rgb(64, 64, 219);
+            font-weight: bolder;
+            padding: 10px;
+            border: 0px;
+            border-radius: 5px;
+        }
     </style>
 </head>
 <body>
     <main>
         <h1>Qual o produto mais barato ?</h1>
         <h3>Informe o valor dos produtos abaixo: </h3>
-        <p><label for="txtpro1">Produto A: $</label><input type="number" name="produto1" id="txtpro1" required></p>
-        <p><label for="txtpro2">Produto B: $</label><input type="number" name="produto2" id="txtpro2" required></p>
-        <p><label for="txtpro3">Produto C: $</label><input type="number" name="produto3" id="txtpro3" required></p>
+        <p><label for="txtpro1">Produto A: $</label><input type="number" name="produto1" id="txtpro1" step="0.1" required></p>
+        <p><label for="txtpro2">Produto B: $</label><input type="number" name="produto2" id="txtpro2" step="0.1" required></p>
+        <p><label for="txtpro3">Produto C: $</label><input type="number" name="produto3" id="txtpro3" step="0.1" required></p>
         <input type="submit" value="Verificar" onclick="calc()">
         <p class="res">....</p>
     </main>

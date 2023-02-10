@@ -6,15 +6,50 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Exercício 7</title>
     <style>
-        
+        body{
+            font-family: 'Courier New', Courier, monospace;
+            background-color: darkcyan;
+        }
+
+        main{
+            background-color: white;
+            width: 30vw;
+            height: 45vh;
+            padding: 10px;
+            margin: auto;
+            border-radius: 15px;
+            box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.555);
+
+            position: absolute;
+            top: 50%;
+            left: 50%;
+
+            transform: translate(-50%, -50%);
+        }
+
+        input[type=Number]{
+            width: 50px;
+        }
+        input[type=submit]{
+            background-color: rgb(111, 173, 173);
+            font-weight: bolder;
+            padding: 10px;
+            border: 0px;
+            border-radius: 5px;
+
+            transition: 0.5s;
+        }
+        input[type=submit]:hover{
+            background-color: rgb(69, 104, 104);
+        }
     </style>
 </head>
 <body>
     <main>
         <h1>Qual o maior e menor número ?</h1>
-        <label for="txtn1">Primeiro número: </label><input type="number" name="num1" id="txtn1" required>
-        <label for="txtn2">Segundo número: </label><input type="number" name="num2" id="txtn2" required>
-        <label for="txtn3">Terceiro número: </label><input type="number" name="num3" id="txtn3" required>
+        <p><label for="txtn1">Primeiro número: </label><input type="number" name="num1" id="txtn1" required></p>
+        <p><label for="txtn2">Segundo número: </label><input type="number" name="num2" id="txtn2" required></p>
+        <p><label for="txtn3">Terceiro número: </label><input type="number" name="num3" id="txtn3" required></p>
         <input type="submit" value="Calcular" onclick="calc()">
         <p class="res">Resultado....</p>
     </main>
@@ -32,20 +67,26 @@
             if(n1 > n2 && n1 > n3){
                 if(n2 < n3){
                     res.innerHTML = n1+' é o maior número e ' +n2+ ' é o menor número.' 
+                    res.style.fontWeight = 'bolder'
                 } else {
                     res.innerHTML = n1+' é o maior número e ' +n3+ ' é o menor número.' 
+                    res.style.fontWeight = 'bolder'
                 }
             } else if(n2 > n1 && n2 > n3){
                 if(n1 < n3){
                     res.innerHTML = n2+' é o maior número e ' +n1+ ' é o menor número.' 
+                    res.style.fontWeight = 'bolder'
                 } else {
-                    res.innerHTML = n2+' é o maior número e ' +n3+ ' é o menor número.' 
+                    res.innerHTML = n2+' é o maior número e ' +n3+ ' é o menor número.'
+                    res.style.fontWeight = 'bolder' 
                 }
             } else{
                 if(n1 < n2){
                     res.innerHTML = n3+' é o maior número e ' +n1+ ' é o menor número.' 
+                    res.style.fontWeight = 'bolder'
                 } else {
                     res.innerHTML = n3+' é o maior número e ' +n2+ ' é o menor número.' 
+                    res.style.fontWeight = 'bolder'
                 }
             }
         }
