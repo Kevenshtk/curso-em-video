@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício 17</title>
+    <style>
+
+    </style>
+</head>
+<body>
+    <h1>Ano bissexto</h1>
+    <main>
+        Informe o ano: <input type="number" name="ano" id="txtano">
+        <input type="submit" value="Verificar" onclick="calc()">
+        <p id="res"></p>
+    </main>
+
+    <script>
+        function calc(){
+            var txtano = document.querySelector('#txtano')
+            var ano = Number(txtano.value)
+            var res = document.getElementById('res')
+
+            var calc = ano % 4
+            if(calc == 0){
+                calc = ano % 100
+                if(calc != 0){
+                res.innerText = 'O ano é bissexto.'
+                }
+            } else {
+                calc = ano % 400
+                if(calc == 0){
+                    res.innerText = 'O ano é bissexto.'
+                } else {
+                    res.innerText = 'O ano não é bissexto.'
+                }
+                }
+            }
+    </script>
+</body>
+</html>
