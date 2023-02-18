@@ -11,11 +11,49 @@
 </head>
 <body>
     <main>
-
+        <p>Número de litros vendidos: <input type="number" name="litro" id="litro" step="0.1"></p>
+        <input type="radio" name="opcao" id="a" onclick="alcool()"> <label for="a">Álcool</label>
+        <input type="radio" name="opcao" id="g" onclick="gaso()"> <label for="g">Gasolina</label> <br>
+        <input type="submit" value="Calcular" onclick="calc()">
+        <div id="res"></div>
     </main>
 
     <script>
         
+        var ope = 0
+        var valor = 0
+ 
+        function alcool(){
+            ope = 1
+        }
+        function gaso(){
+            ope = 2
+        }
+        function calc(){
+            var litro = document.querySelector('#litro')
+            var res = document.querySelector('#res')
+            litro = Number(litro.value)
+
+            if(ope == 1){
+                if(litro <= 20){
+                    valor = litro - 0.3
+                    res.innerText = `O valor a ser pago é $${valor}`
+                } else if(litro > 20){
+                    valor = litro - 0.5
+                    res.innerText = `O valor a ser pago é $${valor}`
+                }
+            }
+
+            if(ope == 2){
+                if(litro <= 20){
+                    valor = litro - 0.4
+                    res.innerText = `O valor a ser pago é $${valor}`
+                } else if(litro > 20){
+                    valor = litro - 0.6
+                    res.innerText = `O valor a ser pago é $${valor}`
+                }
+            }
+        }
     </script>
 </body>
 </html>
