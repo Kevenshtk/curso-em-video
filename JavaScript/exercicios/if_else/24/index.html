@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício 25</title>
+</head>
+<body>
+    <main>
+        <p>Informe o valor de x: <input type="number" name="num1" id="n1"></p>
+        <p>Informe o valor de y: <input type="number" name="num2" id="n2"></p>
+        <input type="submit" value="Inverter" onclick="calc()">
+        <p id="res"></p>
+    </main>
+
+    <script>
+        function calc(){
+            var n1 = document.querySelector('#n1')
+            var n2 = document.querySelector('#n2') 
+            var res = document.querySelector('#res') 
+            n1 = Number(n1.value)
+            n2 = Number(n2.value)
+            var x = n2
+            var y = n1
+            res.innerText = `Valor de x = ${x}  e valor de y = ${y}.`
+        }
+        
+    </script>
+</body>
+</html>
