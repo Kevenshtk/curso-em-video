@@ -6,13 +6,49 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Exercício 11</title>
     <style>
+        body{
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: silver;
+            text-align: center;
+            margin: 0px;
+            padding: 0px;
+        }
+        main{
+            background-color: white;
+            line-height: 15px;
+            height: 37vh;
+            max-width: 400px;
+            margin: auto;
+            padding: 2px;
+            border-radius: 10px;
+            box-shadow: 8px 8px 8px rgba(0, 0, 0, 0.247);
+        }
+        h1{
+            font-size: 2.5em;
+        }
 
+        input[type=number]{
+            width: 60px;
+        }
+        input[type=submit]{
+            background-color: white;
+            color: rgb(121, 119, 119);
+            font-size: 1em;
+            font-weight: bold;
+            padding: 5px;
+            border: 2px solid silver;
+            border-radius: 5px;
+        } 
+        input[type=submit]:hover{
+            background-color: rgba(0, 0, 0, 0.137);
+            transition: 0.5s;
+        }
     </style>
 </head>
 <body>
     <h1>Aumento de Salário</h1>
     <main>
-        <label for="txtsalario">Informe seu salário atual: $</label><input type="number" name="salario" id="txtsalario" step="0.1" required>
+        <p><label for="txtsalario">Informe seu salário atual: $</label><input type="number" name="salario" id="txtsalario" step="0.1" required></p>
         <input type="submit" value="Calcular" onclick="calc()">
         <div id="res"></div>
     </main>
