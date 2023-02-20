@@ -8,16 +8,20 @@ new Date() var.getDay(diaSem)() para pegar data e hora do sistema
 
 document.write(writeln)(`msg`) mostra a msg na tela
 
-var.document.createElement('tag') cria um elemento pelo js*
-ex: var img = document.createElement('img')
+.createElement('tag') cria um elemento HTML pelo js
+.setAttribute('id,class, src'(tipo do atributo), 'nome/file'(valor))
+.appendChild(elemento) anexa algo a um elemento
 
-var.setAttribute('id,class, src', 'nome/file')*
+ex: var img = document.querySelector('#imagem')
+    var i = document.createElement('img')
+    i.setAttribute('src', 'img.jpg')
+    img.appendChild(i)
+
+
 ex: img.setAttribute('id', 'foto')
 
-var.appendChild(elemento) anexa algo a um elemento*
-ex: res.appendChild(img)
-
 var.src = 'local' insere imagens pelo js(com tag img no HTML)
+
 Converter váriaveis
 
 Number.parseInt(n)interio
