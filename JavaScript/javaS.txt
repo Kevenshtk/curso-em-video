@@ -2,6 +2,7 @@ alert('msg') mostra um alerta
 confirm('msg') mostra um alerta de confirma
 prompt('msg') trás um campo texto
 
+`\u{1F449}` para colocar emojis no js U+1F449(código normal)
 Data do Sitema
 new Date() var.getDay(diaSem)() para pegar data e hora do sistema
 
