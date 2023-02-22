@@ -1,0 +1,23 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: lightblue;
+}
+main{
+    background-color: white;
+    text-align: center;
+    line-height: 30px;
+    padding: 10px;
+    margin: auto;
+    border-radius: 10px;
+    box-shadow: 8px 8px 8px rgba(0, 0, 0, 0.562);
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+
+    transform: translate(-50%, -50%);
+}
+
+.input{
+    width: 30px;
+}

@@ -5,31 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Exercício 4</title>
-    <style>
-        body{
-            font-family: Arial, Helvetica, sans-serif;
-            background-color: lightsteelblue;
-        }
-        main{
-            background-color: white;
-            text-align: center;
-            line-height: 35px;
-            margin: auto;
-            padding: 10px;
-            height: 30vh;
-            width: 45vw;
-            border-radius: 10px;
-
-            position: absolute;
-            top: 50%;
-            left: 50%;
-
-            transform: translate(-50%, -50%);
-        }
-        #txt{
-            width: 30px;
-        }
-    </style>
+    <link rel="stylesheet" href="estilo.css">
 </head>
 <body>
     <main>
@@ -39,18 +15,6 @@
         <div id="res">Resultado...</div>
     </main>
 
-    <script>
-        function verificar(){
-            var txt = document.querySelector('#txt')
-            var res = document.querySelector('#res')
-
-            if(txt.value == 'a' || txt.value == 'i' || txt.value == 'u' || txt.value == 'e' || txt.value == 'o'){
-                res.innerHTML = '<strong>Vogal</strong>'
-            } else {
-                res.innerHTML = '<strong>Consoante</strong>'
-            }
-        }
-        
-    </script>
+    <script src="index.js"></script>
 </body>
 </html>

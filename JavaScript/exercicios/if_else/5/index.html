@@ -5,32 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Exercício 5</title>
-    <style>
-        body{
-            font-family: Arial, Helvetica, sans-serif;
-            background-color: lightgoldenrodyellow;
-        }
-        main{
-            background-color: white;
-            text-align: center;
-            line-height: 30px;
-            margin: auto;
-            padding: 15px;
-            height: 30vh;
-            width: 40vw;
-            border-radius: 20px;
-            box-shadow: 8px 8px 5px rgba(0, 0, 0, 0.486);
-
-            position: absolute;
-            top: 50%;
-            left: 50%;
-
-            transform: translate(-50%, -50%);
-        }
-        #txtnum1, #txtnum2{
-            width: 40px;
-        }
-    </style>
+    <link rel="stylesheet" href="estilo.css">
 </head>
 <body>
     <main>
@@ -41,26 +16,6 @@
         <div class="res"></div>
     </main>
 
-    <script>
-        function calc(){
-            var num1 = document.querySelector('#txtnum1')
-            var n1 = Number(num1.value)
-            var num2 = document.querySelector('#txtnum2')
-            var n2 = Number(num2.value)
-            var res = document.querySelector('.res')
-            var n3 = (n1 + n2)/ 2
-            
-            if(n3 >= 7 && n3 < 10){
-                res.innerHTML = '<strong>Aprovado</strong>'
-                res.style.color = 'green'
-            } else if(n3 == 10){
-                res.innerHTML = '<strong>Aprovado com Distinção</strong>'
-                res.style.color = 'green'
-            } else{
-                res.innerHTML = '<strong>Reprovado</strong>'
-                res.style.color = 'red'
-            }
-        }
-    </script>
+    <script src="index.js"></script>
 </body>
 </html>

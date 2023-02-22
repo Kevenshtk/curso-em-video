@@ -5,45 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Exercício 11</title>
-    <style>
-        body{
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background-color: silver;
-            text-align: center;
-            margin: 0px;
-            padding: 0px;
-        }
-        main{
-            background-color: white;
-            line-height: 15px;
-            height: 37vh;
-            max-width: 400px;
-            margin: auto;
-            padding: 2px;
-            border-radius: 10px;
-            box-shadow: 8px 8px 8px rgba(0, 0, 0, 0.247);
-        }
-        h1{
-            font-size: 2.5em;
-        }
-
-        input[type=number]{
-            width: 60px;
-        }
-        input[type=submit]{
-            background-color: white;
-            color: rgb(121, 119, 119);
-            font-size: 1em;
-            font-weight: bold;
-            padding: 5px;
-            border: 2px solid silver;
-            border-radius: 5px;
-        } 
-        input[type=submit]:hover{
-            background-color: rgba(0, 0, 0, 0.137);
-            transition: 0.5s;
-        }
-    </style>
+    <link rel="stylesheet" href="estilo.css">
 </head>
 <body>
     <h1>Aumento de Salário</h1>
@@ -53,47 +15,6 @@
         <div id="res"></div>
     </main>
 
-    <script>
-        function calc(){
-            var txtsalario = document.querySelector('#txtsalario')
-            var res = document.querySelector('#res')
-            var salarioAtual = Number(txtsalario.value)
-            var aumento = 0
-            var salarioNovo = 0
-
-            if(salarioAtual <= 280){
-                salarioNovo = (salarioAtual * 0.2) + salarioAtual
-                aumento = salarioNovo - salarioAtual
-                res.innerHTML = 
-                `<p>Seu salário antes do reajuste: $${salarioAtual}</p>
-                <p>O percentual de aumento aplicado foi de: 20%</p> <p>O aumento foi de: $${aumento.toFixed(2)}</p>
-                <p>Seu salário passou a ser de: $${salarioNovo}</p>`
-
-            } else if(salarioAtual > 280 && salarioAtual <= 700){
-                salarioNovo = (salarioAtual * 0.15) + salarioAtual
-                aumento = salarioNovo - salarioAtual
-                res.innerHTML = 
-                `<p>Seu salário antes do reajuste: $${salarioAtual}</p>
-                <p>O percentual de aumento aplicado foi de: 15%</p> <p>O aumento foi de: $${aumento.toFixed(2)}</p>
-                <p>Seu salário passou a ser de: $${salarioNovo}</p>`
-
-            } else if(salarioAtual > 700 && salarioAtual < 1500){
-                salarioNovo = (salarioAtual * 0.1) + salarioAtual
-                aumento = salarioNovo - salarioAtual
-                res.innerHTML = 
-                `<p>Seu salário antes do reajuste: $${salarioAtual}</p>
-                <p>O percentual de aumento aplicado foi de: 10%</p> <p>O aumento foi de: $${aumento.toFixed(2)}</p>
-                <p>Seu salário passou a ser de: $${salarioNovo}</p>`
-
-            } else {
-                salarioNovo = (salarioAtual * 0.05) + salarioAtual
-                aumento = salarioNovo - salarioAtual
-                res.innerHTML = 
-                `<p>Seu salário antes do reajuste: $${salarioAtual}</p>
-                <p>O percentual de aumento aplicado foi de: 5%</p> <p>O aumento foi de: $${aumento.toFixed(2)}</p>
-                <p>Seu salário passou a ser de: $${salarioNovo}</p>`
-            }
-        }
-    </script>
+    <script src="index.js"></script>
 </body>
 </html>
