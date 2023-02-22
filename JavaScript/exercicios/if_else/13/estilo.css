@@ -25,11 +25,6 @@ main{
     margin-top: 45px;
 }
 
-#res{
-    margin-top: 15px;
-    font-weight: bolder;
-}
-
 label{
     font-size: 1.2em;
     font-weight: bold;
@@ -50,4 +45,9 @@ input[type=submit]{
 
 input[type=submit]:hover{
     background-color:  rgb(51, 51, 143);
+}
+
+#res{
+    margin-top: 15px;
+    font-weight: bolder;
 }

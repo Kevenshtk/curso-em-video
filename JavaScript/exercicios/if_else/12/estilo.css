@@ -5,11 +5,13 @@ body{
     padding: 0px;
     margin: 0px;
 }
+
 h1{
     font-size: 3.2em;
     color: white;
     text-shadow: 5px 5px 8px rgba(0, 0, 0, 0.342);
 }
+
 main{
     background-color: white;
     line-height: 1px;
@@ -20,14 +22,11 @@ main{
     border-radius: 10px;
     box-shadow: 8px 8px 8px rgba(0, 0, 0, 0.342);
 }
-#res{
-    line-height: 10px;
-    text-align: left;
-    padding-left: 90px;
-}
+
 input[type=number]{
     width: 50px;
 }
+
 input[type=submit]{
     background-color: white;
     color: rgb(38, 133, 74);
@@ -37,7 +36,14 @@ input[type=submit]{
     border: 2px solid rgb(66, 192, 114);
     border-radius: 5px;
 } 
+
 input[type=submit]:hover{
     background-color: rgba(0, 0, 0, 0.137);
     transition: 0.5s;
+}
+
+#res{
+    line-height: 10px;
+    text-align: left;
+    padding-left: 90px;
 }

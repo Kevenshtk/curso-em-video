@@ -7,6 +7,11 @@ body{
     padding: 0;
 }
 
+h1{
+    color: rgb(255, 255, 255);
+    text-shadow: 5px 5px 5px rgba(0, 0, 0, 0.644);
+}
+
 main{
     background-color: white;
     max-width: 260px;
@@ -15,11 +20,6 @@ main{
     padding: 4px;
     border-radius: 5px;
     box-shadow: 5px 5px 8px rgba(0, 0, 0, 0.425);
-}
-
-h1{
-    color: rgb(255, 255, 255);
-    text-shadow: 5px 5px 5px rgba(0, 0, 0, 0.644);
 }
 
 input[type=number]{
