@@ -1,0 +1,43 @@
+body{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-color: slateblue;
+    text-align: center;
+    padding: 0;
+    margin: 0;
+}
+
+h1{
+    font-size: 3em;
+}
+
+main{
+    background-color: white;
+    height: 50%;
+    max-width: 260px;
+    margin: auto;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 8px rgba(0, 0, 0, 0.438);
+}
+
+input[type=number]{
+    width: 45px;
+    border: 1px solid black;
+    border-radius: 4px;
+}
+
+input[type=submit]{
+    background-color: white;
+    font-size: 0.9em;
+    font-weight: normal;
+    margin-top: 5px;
+    padding: 5px;
+    border: 2px solid slateblue;
+    border-radius: 5px;
+    transition-duration: 0.5s;
+}
+
+input[type=submit]:hover{
+    background-color: slateblue;
+    color: white;
+}
