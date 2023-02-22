@@ -1,0 +1,43 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgb(107, 45, 45);
+    text-align: center;
+    line-height: 20px;
+    margin: 0;
+    padding: 0;
+}
+
+main{
+    background-color: white;
+    max-width: 260px;
+    height: 50%;
+    margin: auto;
+    padding: 4px;
+    border-radius: 5px;
+    box-shadow: 5px 5px 8px rgba(0, 0, 0, 0.425);
+}
+
+h1{
+    color: rgb(255, 255, 255);
+    text-shadow: 5px 5px 5px rgba(0, 0, 0, 0.644);
+}
+
+input[type=number]{
+    width: 40px;
+}
+
+input[type=submit]{
+    background-color: brown;
+    color: white;
+    
+    font-weight: bolder;
+    padding: 10px;
+    border: 0;
+    border-radius: 5px;
+    transition-duration: 0.5s;
+}
+
+input[type=submit]:hover{
+    font-size: 0.9em;
+    background-color: rgb(134, 29, 29);
+}
