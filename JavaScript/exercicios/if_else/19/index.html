@@ -5,64 +5,20 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Exercício 19</title>
-    <style>
-
-    </style>
+    <link rel="stylesheet" href="estilo.css">
 </head>
 <body>
     <main>
-        <p>Primeiro número: <input type="number" name="num1" id="num1"></p>
-        <p>Segundo número: <input type="number" name="num2" id="num2"></p>
-        <input type="radio" name="operacao" id="ope1" onclick="op1()"><label for="ope1"> Par ou Ímpar</label>
-        <input type="radio" name="operacao" id="ope2" onclick="op2()"> <label for="ope2">Positivo ou Negativo</label> <br>
-        <input type="submit" value="Calcular" onclick="calc()">
-        <div id="res"></div>
+        <div class="conteudo">
+            <p>Primeiro número: <input type="number" name="num1" id="num1"></p>
+            <p>Segundo número: <input type="number" name="num2" id="num2"></p>
+            <input type="radio" name="operacao" id="ope1" onclick="op1()"><label for="ope1"> Par ou Ímpar</label>
+            <input type="radio" name="operacao" id="ope2" onclick="op2()"> <label for="ope2">Positivo ou Negativo</label> <br>
+            <input type="submit" value="Calcular" onclick="calc()">
+            <div id="res"></div>
+        </div>
     </main>
 
-    <script>
-        var num1 = document.querySelector('#num1')
-        var num2 = document.querySelector('#num2')
-        var res = document.querySelector('#res')
-        var ope = 0
-
-        function op1(){
-            ope = 1
-        }
-
-        function op2(){
-            ope = 2
-        }
-
-        function calc(){
-            num1 = Number(num1.value)
-            num2 = Number(num2.value)
-
-            if(ope == 1){
-                num1 = num1 % 2
-                num2 = num2 % 2
-                if(num1 == 0 && num2 == 0){
-                    res.innerText = 'Os números são pares.'
-                } else if(num1 == 0 && num2 != 0){
-                    res.innerText = 'O primeiro número é par e o segundo é ímpar.'
-                } else if(num1 != 0 && num2 == 0){
-                    res.innerText = 'O segundo número é par e o primeiro é ímpar.'
-                } else {
-                    res.innerText = 'Os números são ímpares.'
-                }
-            }
-            
-            if(ope == 2){
-                if(num1 < 0 && num2 < 0){
-                    res.innerText = 'Os números são negativos.'
-                } else if(num1 >= 0 && num2 < 0){
-                    res.innerText = 'O primeiro números é positivo e o segundo é negativo.'
-                } else if(num1 < 0 && num2 >= 0){
-                    res.innerText = 'O primeiro números é negativo e o segundo é positivo.'
-                } else {
-                    res.innerText = 'Os números são positivos.'
-                }
-            }
-        }
-    </script>
+    <script src="index.js"></script>
 </body>
 </html>
