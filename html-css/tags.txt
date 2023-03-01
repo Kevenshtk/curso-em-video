@@ -1,5 +1,11 @@
 Formatações 
 
+<em> efatiza um texto
+
+<mark> destaca um texto
+
+<del> risca o texto
+
 <q> usado para citações simples("")
 
 <blockquote> usado para citações completas(tem quebra de linha e um espaço)
