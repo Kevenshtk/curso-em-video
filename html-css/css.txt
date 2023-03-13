@@ -1,5 +1,8 @@
 @charset "UTF-8"; para ter compatibilidade com caracteres especiais
 
+UNIÃO DE ESTILOS
+span, li aplica o msm estilo para os dois elementos
+
 *{  } para fazer configurações globais
 
 color; muda acor do texto
