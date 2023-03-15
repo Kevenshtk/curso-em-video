@@ -107,3 +107,12 @@ onload"nome()" quando carregar o elemento html
 Estilo em JS
 var.style.textAlign = 'center'
 
+Array
+var nome = [4, 5, 6, 7, 8]
+num = [3(posição)] = 6(valor) acrescenta um valor no vetor
+num.push(valor) acrescenta um valor na ultima posição
+num.length monstra a quatidade de elementos em um vetor
+num.sort() faz os elementos ficarem em ordem crescente
+num.indexOf(7(valor)) mostra a posição do valor
+
+fo(pos(indice) in num(array)){} é usada para array e objetos
