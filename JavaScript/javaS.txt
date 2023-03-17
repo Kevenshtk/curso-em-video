@@ -8,6 +8,8 @@ new Date() var.getDay(diaSem)() para pegar data e hora do sistema
 
 document.write(writeln)(`msg`) mostra a msg na tela
 
+var.focus() faz o cursor do campo voltar a piscar
+
 .createElement('tag') cria um elemento HTML pelo js
 .setAttribute('id,class, src'(tipo do atributo), 'nome/file'(valor))
 .appendChild(elemento) anexa algo a um elemento
@@ -17,6 +19,9 @@ ex: var img = document.querySelector('#imagem')
     i.setAttribute('src', 'img.jpg')
     img.appendChild(i)
 
+ex(select): let i = document.createElement('option')
+        i.text = `Valor ${num.value} adicionado.`
+        lista.appendChild(i)
 
 ex: img.setAttribute('id', 'foto')
 
