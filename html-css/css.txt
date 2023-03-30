@@ -1,7 +1,9 @@
+
 @charset "UTF-8"; para ter compatibilidade com caracteres especiais
 
 UNIÃO DE ESTILOS
-span, li aplica o msm estilo para os dois elementos
+div, p diz q vai ser estilizado as tags div e p
+div p diz q vai ser estilizado a tag p dentro da div
 
 *{  } para fazer configurações globais
 
@@ -15,25 +17,56 @@ vertical-align(top, middles, bottom) para alinha o texto em tabelas
 BACKGROUND
 background-image: linear-gradient(to left(direção), cor, cor); para fazer degrade
 background-image: url(caminho para img); colocar imagem de fundo
-background-size: 1350px(cover(preenche toda a tela), contain(monstra 100% da imagem)); alterar o tamanho
+background-size: 1350px, 300px(largura) 150px(altura) (cover(preenche toda a tela), contain(monstra 100% da imagem)); alterar o tamanho
 background-repeat: (no-repeat, repeat-x(horizontal), repeat-y(vertical));
 background-position:(left, right, top, bottom, center);
 background-attachment: fixed; faz o fundo ficar fixo 
 
 Shorthand
-background(color,image, position, repeat, attachment(ordem)) black url(img/wallpaper002.jpg) no-repeat center fixed;
+background(color,image, repeat, position, attachment(ordem)) black url(img/wallpaper002.jpg) no-repeat center fixed;
 
 
 MEDIADS
-medidas absolutas
+valores relativos define o valor com base em um outro elemento
+100%, 50%
+
+ex.:
+width: calc(100vw - 60(lado E + lado D)); fazer o css fazer cálculos com valores relativos
+margin: 30px;
+
+width: calc((100%/3(cada img vai ocupar 1/3 do espaço)) - 3px(margem));
+margin: 0 1.5px;
+
 cm, mm, px, %
 vw é 1/100 da largura da janela.
 vh é 1/100 da altura da janela.
 
-medidas relativas
-em(altura m), ex(altura x)
-16px é 1em
+height 98vh: ;altura
+width: vw;largura
+max-width: ;lartura máxima
+min-height: ; altura miníma
+min-w, h e max w, h sempre vão se basear no tamanho definido no width ou height;
 
+ex.:
+width: 100%;
+min-width: 600px;
+max-width: 1024px;
+
+OVERFLOW
+overflow (scroll(exibe uma barra de rolagem), auto(só exibe uma barra de rolagem quando o tamanho é ultrapassado))cria uma barra de rolagem no elemento não deixando ele ultrapassar o tamanho
+overflow-x(horizontal) e -y(vertical) controla apenas uma barra de rolagem
+overflow: auto(-x) scroll(-y)
+
+DISPLAY
+diplay: inline, block é capaz de transformar elementos inline em block e vice-versa
+none oculta o elemento
+
+VISIBILITY
+visible padrão
+hidden oculta o elemento mas não remove o espaço do elemento da tela
+
+OPACITY
+opacity: 0% a 100%;
 
 font-size: 1em; define o tamanho da fonte
 font-weight(lighter, normal, bold, bolder) é o peso da fonte
@@ -41,6 +74,7 @@ font-style(italic)
 text-decoration(underline, none) texto sublinhado/ não sublinhado
 text-transform: uppercase; deixa todas as letras maíusculas
 font-variant: small-caps; deixa todas as letras maíusculas e as primeiras letras maiores
+line-height: em; é o espaço entre linha
 
 Shorthand
 font(font-style-> font-weight-> font-size-> font-family(ordem))
@@ -50,11 +84,6 @@ font(font-style-> font-weight-> font-size-> font-family(ordem))
             font-family: nome da fonte;
             src: url('nome e formato da fonte') format('opentype(otf) truetype(ttf)');
         }
-
-
-SELETORES
-id em CSS é #
-class em CSS é .
 
 pseudo-classe é : div(elemento):hover(estado do elemento) é usada para definir um estado especial de um elemento.
 pseudo-elemento : a(elemento)::after(estado do elemento) mexe com o conteúdo do elemento(Ex: coloar ícone em algo)
@@ -72,11 +101,6 @@ hover: quando passa o mouse em cima
 visited:
 active: quando click ocorre a ação 
 focus-within: quando o elemento fica em foco
-
-height 98vh: altura
-width: largura
-max-width: ;lartura máxima
-min-height: px; altura miníma
 
 BORDA
 Shorthand
@@ -121,12 +145,8 @@ resposividade
 	    margin: auto; img pq
         }
 
-overflow-x: auto; faz uma barra de rolagem(horizontal) só para o elemento
-
 
 transition-duration: 0.5s; pra quando o mouse passar em cima
-
-line-height: em; é o espaço entre linha
 
 list-style-type: '\2714(nome I)\00A0(espaço)'; colocar icones na colunas
 
@@ -172,6 +192,4 @@ form > input[type=submit]{ para aplicar estilo em inputs
 
 cursor
 float
-display
-overflow
 transition

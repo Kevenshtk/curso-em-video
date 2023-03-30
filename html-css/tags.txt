@@ -67,6 +67,7 @@ title="texto" mostra o texto quando passao mouse em cima
 LISTA
 <ol> lista ordenada
 
+<ol start="4"> a numeração começará a partir do número
 <ol type="1"> lista númerada
 <ol type="a"> listas com letras minúsculas
 <ol type="A"> listas com letras maiuscular
