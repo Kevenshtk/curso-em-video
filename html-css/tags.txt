@@ -38,8 +38,7 @@ Formatações
 
 &lt; &gt; serve para colocar <>
 
-<select> usado para criar uma lista suspensa.
-<option> conteúdo da lista
+
 
 LINKS
 <a> links
@@ -87,9 +86,11 @@ LISTA
 <dd> descrição
 
 
+
 ÍCONES
 <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" /> icones do google
 <i class="material-icons">NOME DO ÍCONE</i>
+
 
 
 Mídias
@@ -132,22 +133,42 @@ VÍDEO
 
 ESTRUTURA
 <header> é o cabeçalho do site
+
 <main> é o assuto  principal dentro do <body>
+
 <section> é uma seção do site
+
 <footer> é o rodapé do site
+
 <aside> conteúdo extra 
+
+<article> deve fazer sentido por si só e deve ser possível distribuí-lo independentemente do resto do site.
+
+<figure> é usada  para a inserção de uma figura
+<figcaption> para incluir a descrição dessa figura
+
+<em> é utilizado quando desejamos enfatizar um trecho ou palavra no texto
+
+<cite> é utilizado para declarar que naquele trecho há uma citação
+<q>responsável por apresentar o conteúdo retirado de outra fonte.
+ex.:<q>Lorem ipsum dolor sit amet, consectetur </q> - <cite>http://br.lipsum.com/</cite>
+
+<time> é utilizado para representar datas
+ex.:<time datetime=”2017-04-07”>4/7</time>
+
 
 
 TABELAS
 <table>
 <colgroup> <col> usado para seleciona colunas 
-<caption> é a lengenda da tabela
+<caption> da um título para a tabela
 <tr> linha da tabela
 <td> dado da tabela, colsan="x" mescla células em coluna, rowsan="x" mescla células em linha
+<th> cria uma coluna de cabeçalho, scope="col(coluna), colgroup(grupo), row(linha), rowgroup(grupo)" diz de onde são os dados de th 
 <thead> cabeçalho da tabela
-<th> título na tabela, scope="col(coluna), colgroup(grupo), row(linha), rowgroup(grupo)" diz de onde são os dados de th 
 <tbody> corpo da tabela
 <tfoot> rodapé da tabela
+
 
 
 IFRAME
@@ -158,6 +179,13 @@ srcdoc permite usar html dentro do iframe
 
 
 FORMULÁRIOS
+<form>
+action é a url para onde os dados do formulário serão enviados.
+
+method="get(mostra os dados enviados), post(não mostra os dados enviados)"
+
+<textarea> é um campo para textos grandes
+
 <label> faz o campo se relaciona com o elemento
 
 <input>
@@ -170,18 +198,35 @@ autocomplete="username" indica o tipo do campo
 value="F" faz ter um valor quando escolhido
 
 INPUT NUMBER
-min="0" valor minímo aceito
+min="0" valor minímo aceito serve para input date ex.: min="2005-01-01"
 max="10" valor máximo aceito
 step="0.5" faz o valor muda de 0.5
 
-input:checkbox pode escolher vários
-input:radio só pode escolher um (todos do mesmo grupo precisa ter o mesmo name)
+INPUT CHECKBOX pode escolher vários
+para permitir escolher mais de um checkbox é necessário eles estarem com o mesmo nome e no final [].
+
+é usado o <label> para identificar a opição. ex.: <label>Futebol</label>
+
+para marcar o checkbox cliclando no label é preciso adicionar um id no checkbox e um for com o mesmo no do id no label.
+
+INPUT RADIO só pode escolher um (todos do mesmo grupo precisa ter o mesmo name)
+o atributo cheched faz a opção ser marcada por padrão.
+também aceita o required.
+
 input:range traz um botão para arrasta (value="" indica o valor inícial) 
 
 INPUT SELECT
-selected deixa o item já selecionado 
-option são os itens da lista
-<optgroup label="nome do grupo">
+<select> usado para criar uma lista.
+selected deixa o item já selecionado.
+multiple deixa o usuário escolher mais de uma opção (É necessário ter [] no final do nome).
+size="quant" exibe a quantidade de opções indicada;
+
+<option> conteúdo da lista.
+<optgroup label="nome do grupo"> cria um grupo de opções dentro do select
+
+FIELDSET
+<fieldset> agrupa campos do form.
+<legend> é o título do fieldset.
 
 OUTPUT
 <output name="" id="">0</output> ele só monstra informações na tela e não envia

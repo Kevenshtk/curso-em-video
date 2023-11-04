@@ -3,6 +3,7 @@ confirm('msg') mostra um alerta de confirma
 prompt('msg') trás um campo texto
 
 `\u{1F449}` para colocar emojis no js U+1F449(código normal)
+
 Data do Sitema
 new Date() var.getDay(diaSem)() para pegar data e hora do sistema
 
@@ -27,6 +28,7 @@ ex: img.setAttribute('id', 'foto')
 
 var.src = 'local' insere imagens pelo js(com tag img no HTML)
 
+
 Converter váriaveis
 
 Number.parseInt(n)interio
@@ -45,6 +47,7 @@ s.toLowerCase() deixa os caracteres em minúsculo
 n.toFixed(2) mostra as casa depois do .
 .replace('.', ',') troca o . por ,
 
+
 Operadores
 aritméticos
 +
@@ -53,6 +56,7 @@ aritméticos
 /
 % é o resto da divisão 
 ** é a potência 5**2=25
+
 
 atribuição 
 n+=x serve para simplificar n=n+x
@@ -67,6 +71,7 @@ relacionais (true, false)
 != diferente
 === identico(tem q ser msm valor e o tipo)
 !== diferencia pelo tipo
+
 
 lógicos
 ! negação
