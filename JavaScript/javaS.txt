@@ -1,3 +1,28 @@
+NODE.JS
+console.log(texto): mostrar textos
+
+FUNÇÃO
+
+var texto = "Hello World"; declarar a variavel
+
+function imprimir(nome da função) (texto(parametro)) {
+    console.log(texto)
+}
+
+imprimir(texto) chama a função
+
+
+
+
+
+
+
+
+
+
+
+
+
 alert('msg') mostra um alerta
 confirm('msg') mostra um alerta de confirma
 prompt('msg') trás um campo texto
