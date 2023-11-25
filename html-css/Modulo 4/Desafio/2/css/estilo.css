@@ -72,7 +72,7 @@ form > div.campo{
     width: 100%;
     height: 40px;
     border-radius: 8px;
-    margin: 5px 0px;
+    margin: 10px 0px;
 }
 form label{
     display: none;
@@ -91,24 +91,25 @@ div.campo > input{
     border: 0px;
     border-radius: 8px;
     padding: 4px;
-    transform: translateY(-14px);
+    transform: translateY(-11px);
 }
 div.campo > input:focus-within{
     background-color: white;
 }
 
-form > input[type=submit]{
+form > button{
     display: block;
     font-size: 1em;
     width: 100%;
     height: 40px;
     background-color: #49a09d;
     color: white;
+    margin: 10px 0;
     border: none;
     border-radius: 5px;
     cursor: pointer;
 }
-form > input[type=submit]:hover{
+form > button:hover{
     background-color: #2d6462;
 }
 form > a.botao{
