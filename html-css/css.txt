@@ -151,6 +151,7 @@ border(width, style, color): 1px(tamanho) solid(tipo(dashed, groove, ridge, inse
 
 border-radius: 20px 0px(borda direita C/esquerda B); para aredondar a borda
 border-collapse: collapse; junta as bordas de uma tabela
+border-spacing: 15px; Defina o espaçamento das bordas de uma tabela
 
 PADDING
 padding(top, right,bottom, left): é o espaço entre o conteúdo e a margem
