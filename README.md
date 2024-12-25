@@ -1,6 +1,4 @@
-# curso-em-video
-
- Aqui estão todas as aulas/projetos do curso  em video
+## Projetos:
 
 <a href="https://kevenshtk.github.io/curso-em-video/html-css/Modulo 2/Desafios/1/index.html">Projeto Android</a>
 
